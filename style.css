@@ -1,0 +1,73 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+.background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: linear-gradient(270deg, #232526, #414345);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  z-index: -1;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+.slogan {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+.mockups {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+}
+.mockups img {
+  width: 200px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.whatsapp {
+  display: block;
+  text-align: center;
+  background-color: #25d366;
+  color: white;
+  font-weight: bold;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  width: fit-content;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.socials img {
+  width: 30px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .mockups img {
+    width: 100px;
+  }
+}
